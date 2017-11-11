@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     = "http://www.w3.org/ns/widgets"
-        xmlns:gap = "http://phonegap.com/ns/1.0"
-        xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "com.skynoodle.mobile"
-        versionCode = "20200"
-        version   = "3.3.3">
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    id        = "com.skynoodle.mobile"
+    versionCode = "2020"
+    version   = "3.3.4">
     <name>National Hospitality Academy</name>
-
+    
     <description>
         National Hospitality Academy
     </description>
-
+    
     <author href="http://moodle.com" email="mobile@moodle.com">
         National Hospitality Academy
     </author>
-
+    
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-        <string>3.3.3</string>
+        <string>3.3.4</string>
     </gap:config-file>
-
+    
     <gap:platform name="ios" />
     <gap:platform name="android" />
-
+    
     <access origin="*" />
     <access origin="tel:*" launch-external="yes" />
     <access origin="mailto:*" launch-external="yes" />
     <access origin="geo:*" launch-external="yes" />
-
+    
     <allow-navigation href="cdvfile:*" />
     <allow-navigation href="content:*" />
     <allow-navigation href="data:*" />
     <allow-navigation href="*" />
-
+    
     <allow-intent href="*" />
-
+    
     <preference name="phonegap-version" value="cli-6.5.0" />
     <preference name="orientation"      value="default" />
     <preference name="target-device"    value="universal" />
@@ -50,17 +50,17 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="BackupWebStorage" value="none" />
     <preference name="KeyboardDisplayRequiresUserAction" value="false" />
-
+    
     <feature name="StatusBar">
         <param name="ios-package" value="CDVStatusBar" onload="true"/>
     </feature>
-
+    
     <preference name="AndroidPersistentFileLocation"    value="Compatibility" />
     <preference name="iosPersistentFileLocation"        value="Compatibility" />
-
+    
     <icon src="icon.png" />
     <gap:splash src="splash.png" />
-
+    
     <platform name="android">
         <icon src="resources/android/icon/drawable-ldpi-icon.png" qualifier="ldpi"/>
         <icon src="resources/android/icon/drawable-mdpi-icon.png" qualifier="mdpi"/>
@@ -81,7 +81,7 @@
         <splash src="resources/android/splash/drawable-port-xxhdpi-screen.png" qualifier="port-xxhdpi"/>
         <splash src="resources/android/splash/drawable-port-xxxhdpi-screen.png" qualifier="port-xxxhdpi"/>
     </platform>
-
+    
     <platform name="ios">
         <icon src="resources/ios/icon/icon.png" width="57" height="57"/>
         <icon src="resources/ios/icon/icon@2x.png" width="114" height="114"/>
@@ -114,7 +114,7 @@
         <splash src="resources/ios/splash/Default-Landscape@~ipadpro.png" width="2732" height="2048"/>
         <splash src="resources/ios/splash/Default-Portrait@~ipadpro.png" width="2048" height="2732"/>
     </platform>
-
+    
     <gap:plugin name="cordova-plugin-camera" source="npm" />
     <gap:plugin name="cordova-plugin-media-capture" source="npm">
         <param name="CAMERA_USAGE_DESCRIPTION" value="We'd like to access your camera to let you take a photo"/>
@@ -132,7 +132,7 @@
     <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
     <gap:plugin name="cordova-universal-clipboard" source="npm" />
     <gap:plugin name="nl.kingsquare.cordova.background-audio" source="npm" />
-
+    
     <gap:plugin name="phonegap-plugin-push" source="npm" version="1.9.2">
         <param name="SENDER_ID" value="694767596569" />
     </gap:plugin>
@@ -144,21 +144,21 @@
     <gap:plugin name="cordova-plugin-local-notifications-mm" source="npm" />
     <gap:plugin name="net.tunts.webintent" spec="https://github.com/Tunts/WebIntent.git" source="git" />
     <gap:plugin name="ch.ti8m.documenthandler" spec="https://github.com/ti8m/DocumentHandler.git" source="git" />
-
+    
     <gap:config-file platform="android" parent="/manifest">
-         <application android:debuggable="true" />
+        <application android:debuggable="true" />
     </gap:config-file>
-
+    
     <!-- See MOBILE-892 -->
     <preference name="permissions" value="none"/>
-
+    
     <gap:config-file platform="android" parent="/manifest" mode="delete">
         <uses-permission android:name="android.permission.WRITE_CONTACTS" />
         <uses-permission android:name="android.permission.READ_CONTACTS" />
         <uses-permission android:name="android.permission.GET_ACCOUNTS" />
         <uses-permission android:name="android.permission.VIBRATE"/>
     </gap:config-file>
-
+    
     <gap:config-file platform="ios" parent="CFBundleDocumentTypes" mode="add">
         <array>
             <dict>
@@ -168,12 +168,12 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>public.calendar-event</string>
-                  <string>public.database</string>
-                  <string>public.executable</string>
-                  <string>public.data</string>
-                  <string>public.content </string>
-                  <string>public.item</string>
+                    <string>public.calendar-event</string>
+                    <string>public.database</string>
+                    <string>public.executable</string>
+                    <string>public.data</string>
+                    <string>public.content </string>
+                    <string>public.item</string>
                 </array>
             </dict>
             <dict>
@@ -183,7 +183,7 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>public.video</string>
+                    <string>public.video</string>
                 </array>
             </dict>
             <dict>
@@ -193,7 +193,7 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>public.image</string>
+                    <string>public.image</string>
                 </array>
             </dict>
             <dict>
@@ -203,7 +203,7 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>com.apple.webarchive</string>
+                    <string>com.apple.webarchive</string>
                 </array>
             </dict>
             <dict>
@@ -213,9 +213,9 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>com.apple.keynote.key</string>
-                  <string>com.apple.iwork.keynote.key</string>
-                  <string>com.apple.iwork.keynote.kth</string>
+                    <string>com.apple.keynote.key</string>
+                    <string>com.apple.iwork.keynote.key</string>
+                    <string>com.apple.iwork.keynote.kth</string>
                 </array>
             </dict>
             <dict>
@@ -225,9 +225,9 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>com.apple.numbers.numbers</string>
-                  <string>com.apple.iwork.numbers.numbers</string>
-                  <string>com.apple.iwork.numbers.template</string>
+                    <string>com.apple.numbers.numbers</string>
+                    <string>com.apple.iwork.numbers.numbers</string>
+                    <string>com.apple.iwork.numbers.template</string>
                 </array>
             </dict>
             <dict>
@@ -237,9 +237,9 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>com.apple.page.pages</string>
-                  <string>com.apple.iwork.pages.pages</string>
-                  <string>com.apple.iwork.pages.template</string>
+                    <string>com.apple.page.pages</string>
+                    <string>com.apple.iwork.pages.pages</string>
+                    <string>com.apple.iwork.pages.template</string>
                 </array>
             </dict>
             <dict>
@@ -249,7 +249,7 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>org.oasis.opendocument.spreadsheet</string>
+                    <string>org.oasis.opendocument.spreadsheet</string>
                 </array>
             </dict>
             <dict>
@@ -259,7 +259,7 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>org.oasis.opendocument.presentation</string>
+                    <string>org.oasis.opendocument.presentation</string>
                 </array>
             </dict>
             <dict>
@@ -269,7 +269,7 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>org.oasis.opendocument.text</string>
+                    <string>org.oasis.opendocument.text</string>
                 </array>
             </dict>
             <dict>
@@ -279,7 +279,38 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>public.folder</string>
+                    <string>public.folder</string>
+                </array>
+            </dict>
+            <dict>
+                <key>CFBundleTypeName</key>
+                <string>Audio</string>
+                <key>LSHandlerRank</key>
+                <string>Alternate</string>
+                <key>LSItemContentTypes</key>
+                <array>
+                    <string>public.audio</string>
+                    <string>public.mp3</string>
+                    <string>public.mpeg-4-audio</string>
+                    <string>com.apple.protected-​mpeg-4-audio</string>
+                    <string>public.aifc-audio</string>
+                    <string>com.apple.coreaudio-​format</string>
+                    <string>public.aiff-audio</string>
+                </array>
+            </dict>
+            <dict>
+                <key>CFBundleTypeName</key>
+                <string>Movie</string>
+                <key>LSHandlerRank</key>
+                <string>Alternate</string>
+                <key>LSItemContentTypes</key>
+                <array>
+                    <string>public.movie</string>
+                    <string>public.3gpp2</string>
+                    <string>public.3gpp</string>
+                    <string>public.mpeg</string>
+                    <string>com.apple.quicktime-movie</string>
+                    <string>public.mpeg-4</string>
                 </array>
             </dict>
             <dict>
@@ -289,7 +320,7 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>com.compuserve.gif</string>
+                    <string>com.compuserve.gif</string>
                 </array>
             </dict>
             <dict>
@@ -299,7 +330,7 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>public.png</string>
+                    <string>public.png</string>
                 </array>
             </dict>
             <dict>
@@ -309,7 +340,7 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>public.tiff</string>
+                    <string>public.tiff</string>
                 </array>
             </dict>
             <dict>
@@ -319,7 +350,7 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>public.jpeg</string>
+                    <string>public.jpeg</string>
                 </array>
             </dict>
             <dict>
@@ -329,7 +360,7 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>public.xml</string>
+                    <string>public.xml</string>
                 </array>
             </dict>
             <dict>
@@ -339,8 +370,8 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>public.html</string>
-                  <string>public.xhtml</string>
+                    <string>public.html</string>
+                    <string>public.xhtml</string>
                 </array>
             </dict>
             <dict>
@@ -350,9 +381,9 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>public.rtf</string>
-                  <string>com.apple.rtfd</string>
-                  <string>com.apple.flat-rtfd</string>
+                    <string>public.rtf</string>
+                    <string>com.apple.rtfd</string>
+                    <string>com.apple.flat-rtfd</string>
                 </array>
             </dict>
             <dict>
@@ -362,29 +393,29 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>public.text</string>
-                  <string>public.plain-text</string>
-                  <string>public.utf8-plain-text</string>
-                  <string>public.utf16-external-plain-​text</string>
-                  <string>public.utf16-plain-text</string>
-                  <string>com.apple.traditional-mac-​plain-text</string>
-                  <string>public.source-code</string>
-                  <string>public.c-source</string>
-                  <string>public.objective-c-source</string>
-                  <string>public.c-plus-plus-source</string>
-                  <string>public.objective-c-plus-​plus-source</string>
-                  <string>public.c-header</string>
-                  <string>public.c-plus-plus-header</string>
-                  <string>com.sun.java-source</string>
-                  <string>public.script</string>
-                  <string>public.shell-script</string>
+                    <string>public.text</string>
+                    <string>public.plain-text</string>
+                    <string>public.utf8-plain-text</string>
+                    <string>public.utf16-external-plain-​text</string>
+                    <string>public.utf16-plain-text</string>
+                    <string>com.apple.traditional-mac-​plain-text</string>
+                    <string>public.source-code</string>
+                    <string>public.c-source</string>
+                    <string>public.objective-c-source</string>
+                    <string>public.c-plus-plus-source</string>
+                    <string>public.objective-c-plus-​plus-source</string>
+                    <string>public.c-header</string>
+                    <string>public.c-plus-plus-header</string>
+                    <string>com.sun.java-source</string>
+                    <string>public.script</string>
+                    <string>public.shell-script</string>
                 </array>
             </dict>
             <dict>
                 <key>CFBundleTypeExtensions</key>
                 <array>
-                  <string>zip</string>
-                  <string>zipx</string>
+                    <string>zip</string>
+                    <string>zipx</string>
                 </array>
                 <key>CFBundleTypeName</key>
                 <string>Zip archive</string>
@@ -392,17 +423,17 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>public.zip-archive</string>
-                  <string>public.archive</string>
-                  <string>com.pkware.zip-archive</string>
-                  <string>com.pkware.zipx-archive</string>
+                    <string>public.zip-archive</string>
+                    <string>public.archive</string>
+                    <string>com.pkware.zip-archive</string>
+                    <string>com.pkware.zipx-archive</string>
                 </array>
             </dict>
             <dict>
                 <key>CFBundleTypeExtensions</key>
                 <array>
-                  <string>rar</string>
-                  <string>RAR</string>
+                    <string>rar</string>
+                    <string>RAR</string>
                 </array>
                 <key>CFBundleTypeName</key>
                 <string>Rar archive</string>
@@ -410,15 +441,15 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>com.rarlab.rar-archive</string>
-                  <string>public.archive</string>
+                    <string>com.rarlab.rar-archive</string>
+                    <string>public.archive</string>
                 </array>
             </dict>
             <dict>
                 <key>CFBundleTypeExtensions</key>
                 <array>
-                  <string>7z</string>
-                  <string>7Z</string>
+                    <string>7z</string>
+                    <string>7Z</string>
                 </array>
                 <key>CFBundleTypeName</key>
                 <string>7z archive</string>
@@ -426,8 +457,8 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>org.7-zip.7-zip-archive</string>
-                  <string>public.archive</string>
+                    <string>org.7-zip.7-zip-archive</string>
+                    <string>public.archive</string>
                 </array>
             </dict>
             <dict>
@@ -437,7 +468,7 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>com.microsoft.waveform-​audio</string>
+                    <string>com.microsoft.waveform-​audio</string>
                 </array>
             </dict>
             <dict>
@@ -447,8 +478,8 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>com.microsoft.ico</string>
-                  <string>com.apple.icns</string>
+                    <string>com.microsoft.ico</string>
+                    <string>com.apple.icns</string>
                 </array>
             </dict>
             <dict>
@@ -458,7 +489,7 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>com.microsoft.bmp</string>
+                    <string>com.microsoft.bmp</string>
                 </array>
             </dict>
             <dict>
@@ -468,8 +499,8 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>com.microsoft.powerpoint.​ppt</string>
-                  <string>org.openxmlformats.presentationml.presentation</string>
+                    <string>com.microsoft.powerpoint.​ppt</string>
+                    <string>org.openxmlformats.presentationml.presentation</string>
                 </array>
             </dict>
             <dict>
@@ -479,8 +510,8 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>org.openxmlformats.spreadsheetml.sheet</string>
-                  <string>com.microsoft.excel.xls</string>
+                    <string>org.openxmlformats.spreadsheetml.sheet</string>
+                    <string>com.microsoft.excel.xls</string>
                 </array>
             </dict>
             <dict>
@@ -490,9 +521,9 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>com.microsoft.word.doc</string>
-                  <string>com.microsoft.word.wordml</string>
-                  <string>org.openxmlformats.wordprocessingml.document</string>
+                    <string>com.microsoft.word.doc</string>
+                    <string>com.microsoft.word.wordml</string>
+                    <string>org.openxmlformats.wordprocessingml.document</string>
                 </array>
             </dict>
             <dict>
@@ -502,16 +533,22 @@
                 <string>Alternate</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                  <string>com.adobe.pdf</string>
+                    <string>com.adobe.pdf</string>
                 </array>
             </dict>
         </array>
     </gap:config-file>
-
+    
     <gap:config-file platform="ios" parent="NSAppTransportSecurity" mode="add">
         <dict>
             <key>NSAllowsArbitraryLoads</key><true/>
         </dict>
     </gap:config-file>
-
+    
+    <gap:config-file platform="ios" parent="UIBackgroundModes" overwrite="true">
+        <array> <string>location</string>
+        </array>
+    </gap:config-file>
+    
 </widget>
+
