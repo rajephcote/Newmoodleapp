@@ -3,7 +3,7 @@
     xmlns:gap = "http://phonegap.com/ns/1.0"
     xmlns:android = "http://schemas.android.com/apk/res/android"
     id        = "com.skynoodle.mobile"
-    versionCode = "2020"
+    versionCode = "20200"
     version   = "3.3.4">
     <name>National Hospitality Academy</name>
     
@@ -131,7 +131,7 @@
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
     <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
     <gap:plugin name="cordova-universal-clipboard" source="npm" />
-    <gap:plugin name="nl.kingsquare.cordova.background-audio" source="npm" />
+<!--    <gap:plugin name="nl.kingsquare.cordova.background-audio" source="npm" /> -->
     
     <gap:plugin name="phonegap-plugin-push" source="npm" version="1.9.2">
         <param name="SENDER_ID" value="694767596569" />
@@ -543,11 +543,6 @@
         <dict>
             <key>NSAllowsArbitraryLoads</key><true/>
         </dict>
-    </gap:config-file>
-    
-    <gap:config-file platform="ios" parent="UIBackgroundModes" overwrite="true">
-        <array> <string>location</string>
-        </array>
     </gap:config-file>
     
 </widget>
