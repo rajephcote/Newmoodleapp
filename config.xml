@@ -4,7 +4,7 @@
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "com.skynoodle.mobile"
         versionCode = "20200"
-        version   = "1.3">
+        version   = "1.4">
     <name>National Hospitality Academy</name>
 
     <description>
